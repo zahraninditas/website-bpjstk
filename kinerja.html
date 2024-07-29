@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BPJS Ketenagakerjaan memberikan program Jaminan Tenaga Kerja dan perlindungan sosial kepada seluruh pekerja di Indonesia." itemprop="description">
+    <meta name="originalTitle" content="Program Jaminan Sosial Tenaga Kerja - BPJS Ketenagakerjaan">
+    <title>BPJS Ketenagakerjaan</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Inline CSS for button styles */
+        .year-btn {
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .year-btn.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .year-btn.inactive {
+            background-color: #e9ecef;
+            color: #6c757d;
+        }
+
+        .year-btn-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 90px; /* Adjust gap between quarters */
+        }
+
+        .quarter {
+            text-align: left;
+        }
+
+        .quarter-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .quarter-detail {
+            font-size: 18px;
+            font-weight: normal !important; /* Ensure text is not bold */
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body class="ui-transparent-nav">
+    <!-- Navbar Fixed + Default -->
+    <nav class="navbar navbar-fixed-top transparent navbar-default">
+      <div class="container container-nav">
+        <!-- Navbar Logo -->
+        <a class="ui-variable-logo navbar-brand" href="/" title="BPJamsostek">
+            <!-- Default Logo -->
+            <img class="logo-default" src="images/logo-bpjamsostek-color.svg" alt="BPJS Ketenagakerjaan - BPJamsostek" data-uhd>
+            <!-- Transparent Logo -->
+            <img class="logo-transparent" src="images/download.png" alt="BPJS Ketenagakerjaan - BPJamsostek" data-uhd>
+        </a><!-- .navbar-brand -->
+        <!-- Navbar Toggle -->
+        <a href="#" class="ui-mobile-nav-toggle pull-right mt-10"></a>
+        <!-- Navbar Button -->
+        <a href="/en" class="btn btn-sm pull-right mt-25"><span class="icon-globe"></span> EN</a>
+        <a href="/search.html" class="btn btn-sm btn-search pull-right mt-25"><i class="fa fa-search"></i></a>
+        <!-- Navbar Navigation -->
+        <div class="ui-navigation navbar-right mt-10">
+          <ul class="nav navbar-nav">
+            <!-- Nav Item -->
+            <li><a href="/informasi.html"><span>Informasi Kepesertaan</span></a></li>
+            <!-- Nav Item -->
+            <li><a href="/cara-klaim.html"><span>Cara Klaim</span></a></li>
+            <!-- Nav Item -->
+            <li><a href="/berita.html"><span>Berita</span></a></li>
+            <!-- Nav Item -->
+            <li><a href="/tentang-kami.html"><span>Tentang Kami</span></a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span>Informasi Publik <span></span><span class="fa fa-chevron-down" style="font-size: 11px"></span></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/laporan-pengelolaan-program.html"><span class="icon-submenu icon-kinerja"></span>Laporan Pengelolaan Program</a></li>
+                <li><a href="/laporan-terintegrasi.html"><span class="icon-submenu icon-kinerja"></span>Laporan Terintegrasi</a></li>
+                <li><a href="/good-governance.html"><span class="icon-submenu icon-good-governance"></span>Good Governance</a></li>
+                <li><a href="/peraturan.html"><span class="icon-submenu icon-peraturan"></span>Peraturan-Peraturan</a></li>
+                <li><a href="/tanggung-jawab-sosial-lingkungan.html"><span class="icon-submenu icon-tjsl"></span>TJSL</a></li>
+                <li><a href="https://e-ppid.bpjsketenagakerjaan.go.id/"><span class="icon-submenu icon-tjsl"></span>E-PPID</a></li>
+              </ul>
+            </li>
+            <!-- Nav Item -->
+            <li><a href="/kontak.html"><span>Kontak</span></a></li>
+          </ul><!-- .navbar-nav -->
+        </div><!-- .ui-navigation -->
+      </div><!-- .container -->
+    </nav><!-- nav -->
+
+    <div id="homepage-regulasi" class="main" role="main">
+        <div class="carousel-inner">
+        <div class="item-bg">
+            <img src="images/banner_hd_PU_menggandeng_BPU_Banner-100.jpg" alt="Investment BPJAMSOSTEK" class="web-banner" style="width:100%;">
+            <img src="images/banner_mobile_PU_menggandeng_BPU_Mobile_Banner-100.jpg" alt="Investment BPJAMSOSTEK" class="mobile-banner" style="width:100%;">
+            <div class="carousel-caption">   
+            <h1 class="heading-takel" data-show="fade-in-up-big" data-delay="100">
+                Kinerja Investasi
+            </h1>      
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 50px; font-weight: bold;">Total Investment Income</h2>
+        <div class="year-btn-container">
+            <button class="year-btn inactive" data-year="2024">2024</button>
+            <button class="year-btn inactive" data-year="2023">2023</button>
+            <button class="year-btn active" data-year="2022">2022</button>
+        </div>
+        <div id="performance-content" class="text-center" style="margin-top: 20px;"></div>
+    </div>
+
+    <footer>
+        <img src="images/footer.png" alt="Screenshot" class="footer-image">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            function loadContent(year) {
+                let content = '';
+                if (year == 2022) {
+                    content = `
+                        <div class="content-container">
+                            <div class="quarter">
+                                <div class="quarter-title">Q1</div>
+                                <p class="quarter-detail">AUM: Rp570.468,88</p>
+                                <p class="quarter-detail">YOI JHT: 6,57%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 6,36%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q2</div>
+                                <p class="quarter-detail">AUM: Rp587.123,26</p>
+                                <p class="quarter-detail">YOI JHT: 6,94%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 6,74%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q3</div>
+                                <p class="quarter-detail">AUM: Rp607.513,26</p>
+                                <p class="quarter-detail">YOI JHT: 6,87%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 6,62%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q4</div>
+                                <p class="quarter-detail">AUM: Rp626.948,60</p>
+                                <p class="quarter-detail">YOI JHT: 6,81%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 6,53%</p>
+                            </div>
+                        </div>
+                    `;
+                } else if (year == 2023) {
+                    content = `
+                        <div class="content-container">
+                            <div class="quarter">
+                                <div class="quarter-title">Q1</div>
+                                <p class="quarter-detail">AUM: Rp643.767,56</p>
+                                <p class="quarter-detail">YOI JHT: 6,76%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 6,66%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q2</div>
+                                <p class="quarter-detail">AUM: Rp669.063,79</p>
+                                <p class="quarter-detail">YOI JHT: 7,66%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 7,46%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q3</div>
+                                <p class="quarter-detail">AUM: Rp686.122,15</p>
+                                <p class="quarter-detail">YOI JHT: 7,16%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 7,30%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q4</div>
+                                <p class="quarter-detail">AUM: Rp710.805,63</p>
+                                <p class="quarter-detail">YOI JHT: 7,03%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 7,19%</p>
+                            </div>
+                        </div>
+                    `;
+                } else if (year == 2024) {
+                    content = `
+                        <div class="content-container">
+                            <div class="quarter">
+                                <div class="quarter-title">Q1</div>
+                                <p class="quarter-detail">AUM: Rp728.389,10</p>
+                                <p class="quarter-detail">YOI JHT: 6,82%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 6,79%</p>
+                            </div>
+                            <div class="quarter">
+                                <div class="quarter-title">Q2</div>
+                                <p class="quarter-detail">AUM: Rp746.223,84</p>
+                                <p class="quarter-detail">YOI JHT: 7,12%</p>
+                                <p class="quarter-detail">YOI JHT Syariah: 7,31%</p>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                $('#performance-content').html(content);
+                $('html, body').animate({
+                    scrollTop: $("#performance-content").offset().top
+                }, 1000);
+            }
+
+            function setActiveButton(year) {
+                // Remove active class from all buttons and add inactive class
+                $('.year-btn').removeClass('active').addClass('inactive');
+                // Add active class to clicked button and remove inactive class
+                $(`.year-btn[data-year="${year}"]`).removeClass('inactive').addClass('active');
+            }
+
+            // Load the default content (2024) when the page loads
+            loadContent('2024');
+            setActiveButton('2024');
+
+            $('.year-btn').on('click', function() {
+                const year = $(this).data('year');
+                loadContent(year);
+                setActiveButton(year);
+            });
+        });
+    </script>
+</body>
+</html>
